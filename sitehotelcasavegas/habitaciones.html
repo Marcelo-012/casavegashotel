@@ -33,13 +33,16 @@
 		<title>..:: Hotel Casavegas | Inicio ::..</title>
 		
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Story+Script&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Story+Script&display=swap');
 		</style>
 
 		<!-- Enlaces a las hojas de estilos externas -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 		<link rel="stylesheet" href="css/habitaciones.css">
 		<link rel="stylesheet" href="css/global/nav.css">
 		<link rel="stylesheet" href="css/global/hambuger_menu.css">
+		<link rel="stylesheet" href="css/cajas/cajaCuarto.css">
 		<link rel="stylesheet" href="css/global/footer.css">
 	</head>
 
@@ -120,12 +123,101 @@
 		<!--Contenido del sitio web -->
 		</section>
 		
-		<section>
-			<div class="banner">
-				<h1>Habitaciones</h1>
-					<p1>Tenemos diferentess tipos de habitaciones para tu comodidad.</p1>
-			</div>	
-		</section>
+	<section class="seccion-tarjetas">
+    <div class="banner">
+        <h1 class="Bienvenida">Conoce nuestras habitaciones</h1>
+    </div>
+
+    <div class="contenedor-tarjetas">
+        <a href="nosotros.html">
+            <div class="tarjeta-info">
+                <div class="imagen-habitacion">
+                    <img src="/img/imgCuartos/CSencillo/IMG_0157-HDR.jpg" alt="Habitación">
+                    <div class="overlay-info">
+                        <h3 class="titulo-tarjeta">Habitacion Sencilla</h3>
+                        <div class="detalles-container">
+                            <div class="detalle-hab">
+                                <i class="fa-solid fa-bed"></i>
+                                <span>1 Cama<br>king size</span>
+                            </div>
+                            <div class="detalle-hab">
+                                <i class="fa-solid fa-users"></i>
+                                <span>2<br>personas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        <a href="galeria.html">
+            <div class="tarjeta-info offset">
+                <div class="imagen-habitacion">
+                    <img src="/img/imgCuartos/CDoble/IMG_0088-HDR.jpg" alt="Habitación">
+                    <div class="overlay-info">
+                        <h3 class="titulo-tarjeta">Habitacion Doble</h3>
+                        <div class="detalles-container">
+                            <div class="detalle-hab">
+                                <i class="fa-solid fa-bed"></i>
+                                <span>2 Camas<br>matrimoniales</span>
+                            </div>
+                            <div class="detalle-hab">
+                                <i class="fa-solid fa-users"></i>
+                                <span>4<br>personas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        <a href="contacto.html">
+            <div class="tarjeta-info">
+                <div class="imagen-habitacion">
+                    <img src="/img/imgCuartos/CJunior/IMG_0154-HDR.jpg" alt="Habitación">
+                    <div class="overlay-info">
+                        <h3 class="titulo-tarjeta">Suite Junior</h3>
+                        <div class="detalles-container">
+                            <div class="detalle-hab">
+                                <i class="fa-solid fa-bed"></i>
+                                <span>1 king size <br>1 matrimonial</span>
+                            </div>
+                            <div class="detalle-hab">
+                                <i class="fa-solid fa-users"></i>
+                                <span>2<br>personas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="galeria.html">
+            <div class="tarjeta-info offset">
+                <div class="imagen-habitacion">
+                    <img src="/img/imgCuartos/CMaster/IMG_0184-HDR.jpg" alt="Habitación">
+                    <div class="overlay-info">
+                        <h3 class="titulo-tarjeta">Suite Master</h3>
+                        <div class="detalles-container">
+                            <div class="detalle-hab">
+                                <i class="fa-solid fa-bed"></i>
+                                <span>1 king size <br>1 matrimonial</span>
+                            </div>
+                            <div class="detalle-hab">
+                                <i class="fa-solid fa-users"></i>
+                                <span>2<br>personas</span>
+                            </div>
+							<div class="detalle-hab">
+                                <i class="fa-solid fa-hot-tub-person"></i>
+                                <span>1<br>Jacuzzy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
 
 		<!-- Footer -->
 		<footer class="footer">

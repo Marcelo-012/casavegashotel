@@ -25,17 +25,44 @@
     position: relative;
 }
 /* Termina estilos para el texto sobre el carrusel */
+
+.banner {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    font-family: 'parisienne', cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Bienvenida {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #A61281; /*#894590*/
+    width: fit-content; /* El borde solo abarca el texto */
+    max-width: 90%; /* Límite máximo en pantallas pequeñas */
+}
 /* Estilos para el texto sobre el carrusel */
 .texto h2 {
     font-size: 45px;
     margin-bottom: 35px;
     font-family: 'parisienne', cursive;
+    font-weight: 400;
+    font-style: normal;
     line-height: 1.2;
 }
 
 .texto {
     position: absolute;
-    font-style: italic;
+    font-family: "Story Script", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -54,6 +81,7 @@
     line-height: 1.6;
 }
 /* Termina estilos para el texto sobre el carrusel */
+
 /* Estilos para las imágenes del carrusel */
 .SliderCarrusel img {
     width: 100%;
@@ -61,10 +89,12 @@
 }
 /* Termina estilos para las imágenes del carrusel */
 
+
 /* Estilos para la sección de servicios */
  .container {
-            max-width: 1400px;
-            margin: 0 auto;
+            max-width: 1200px;
+            margin: 40px auto;
+           
         }
 
         .services-grid {
@@ -86,13 +116,15 @@
 
         .icon-container i {
             font-size: 48px;
-            color: #894590;
+            color: #A61281;
         }
 
         .service-title {
-            color: #894590;
+            color: #A61281;
             font-size: 20px;
-            font-weight: 600;
+            font-family: "PT Sans", sans-serif;
+            font-weight: 700;
+            font-style: normal;
             margin-bottom: 15px;
             position: relative;
             padding-bottom: 15px;
@@ -105,12 +137,14 @@
             left: 0;
             width: 50px;
             height: 2px;
-            background-color: #894590;
+            background-color: #A61281;
         }
 
         .service-description {
             color: #666;
-            font-size: 15px;
+            font-family: "PT Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
             line-height: 1.6;
         }
         /* Efectos hover al pasar cursor*/
@@ -151,7 +185,12 @@
 }
 
 /* RESPONSIVE - Tablets */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+    .Bienvenida {
+        font-size: 28px;
+        max-width: 85%;
+    }
+
     .texto {
         padding: 15px;
         width: 85%;
@@ -169,6 +208,11 @@
 
 /* RESPONSIVE - Móviles grandes */
 @media (max-width: 768px) {
+        .Bienvenida {
+        font-size: 24px;
+        max-width: 90%;
+    }
+
     .texto {
         padding: 15px 10px;
         width: 90%;
@@ -188,9 +232,15 @@
 
 /* RESPONSIVE - Móviles pequeños */
 @media (max-width: 480px) {
+    .Bienvenida {
+        font-size: 20px;
+        max-width: 95%;
+        padding-bottom: 10px;
+    }
+
     .texto {
         padding: 12px 8px;
-        width: 95%;
+        width: 100%;
         border-radius: 5px;
     }
 
@@ -207,6 +257,7 @@
 
 /* RESPONSIVE - Móviles muy pequeños */
 @media (max-width: 360px) {
+    
     .texto {
         padding: 10px 6px;
         width: 95%;
@@ -221,4 +272,3 @@
         font-size: 11px;
     }
 }
-/* Termina estilos para las imágenes del carrusel */

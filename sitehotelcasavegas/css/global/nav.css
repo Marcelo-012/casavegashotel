@@ -11,9 +11,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
     font-size: 14px;
-	font-weight: 500;
     border-bottom: 1px solid #ccc;
     width: 100%;
     padding: 0px 10px;
@@ -95,12 +96,13 @@ header ul li {
 /* Menú de navegación al hacer scroll */
 header ul li a {
 	position: relative;
-	font-family: Helvetica, sans-serif;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-style: normal;
 	margin: 0 15px;
 	text-decoration: none;
 	color: #fff;
 	letter-spacing: 2px;
-	font-weight: 600;
 	transition: 0.3s;
 	display: block;
 	padding: 10px 0;
@@ -108,12 +110,13 @@ header ul li a {
 
 /* subenú de navegación al pasar sobre el curso sin hacer scroll */
 header ul li a:hover {
-	color: #ffd700;
+	color: #ACCA05;
+	/*color: #ffd700;*/
 }
 
 /* submenú de navegación al pasar el curso haciendo scroll hacer scroll */
 header.abajo ul li a:hover {
-	color: #894590;
+	color: #A61281;
 }
 
 /* Menú de navegación al hacer scroll */
@@ -136,7 +139,7 @@ nav ul li ul {
 	display: none;
 	flex-direction: column;
 	min-width: 180px;
-	border-top: 3px solid #ffd700;
+	border-top: 3px solid #ACCA05;
 	list-style: none;
 	border-radius: 10px;
 }
@@ -166,7 +169,7 @@ header ul li ul li ul {
 
 header.abajo ul li ul {
 	background: rgba(255, 255, 255, 0.98);
-	border-top: 3px solid #894590;
+	border-top: 3px solid #A61281;
 	
 }
 
@@ -176,6 +179,6 @@ header.abajo ul li ul li a {
 }
 
 header.abajo ul li ul li a:hover {
-	color: #894590;
+	color: #A61281;
 	background: rgba(0, 68, 204, 0.1);
 }
